@@ -1,0 +1,59 @@
+{
+  "author": "sms77 e.K. <support@sms77.io> (https://www.sms77.io/)",
+  "homepage": "https://github.com/seven-io/react-sms-counter",
+  "keywords": [
+    "sms",
+    "characters",
+    "count",
+    "gsm7",
+    "ucs2"
+  ],
+  "description": "Counts the SMS character usage in browser as well as NodeJS environments.",
+  "dependencies": {
+    "@sms77.io/counter": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "vite": "^3.1.8"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/react-sms-counter.js",
+      "require": "./dist/react-sms-counter.umd.cjs"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "license": "MIT",
+  "main": "dist/react-sms-counter.umd.cjs",
+  "module": "dist/react-sms-counter.js",
+  "name": "react-sms-counter",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seven-io/react-sms-counter.git"
+  },
+  "scripts": {
+    "build": "vite build",
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run build",
+    "storybook": "start-storybook -p 6006 --no-open"
+  },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "version": "0.0.1"
+}
