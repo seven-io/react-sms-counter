@@ -1,5 +1,5 @@
 {
-  "author": "sms77 e.K. <support@sms77.io> (https://www.sms77.io/)",
+  "author": "seven communications GmbH & Co. KG <support@seven.io> (https://www.seven.io/)",
   "homepage": "https://github.com/seven-io/react-sms-counter",
   "keywords": [
     "sms",
@@ -8,20 +8,22 @@
     "gsm7",
     "ucs2"
   ],
-  "description": "Counts the SMS character usage in browser as well as NodeJS environments.",
+  "description": "Counts the SMS character length / message count in in React applications.",
   "dependencies": {
     "@sms77.io/counter": "^1.5.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@rollup/plugin-typescript": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/react": "^6.5.12",
-    "vite": "^3.1.8"
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "vite": "^4.1.1"
   },
   "exports": {
     ".": {
@@ -48,12 +50,13 @@
     "url": "https://github.com/seven-io/react-sms-counter.git"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "tsc && vite build",
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006 --no-open"
+    "storybook": "start-storybook -p 6006 --no-open",
+    "type": "tsc --declaration --emitDeclarationOnly --outDir dist"
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
