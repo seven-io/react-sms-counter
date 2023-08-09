@@ -1,13 +1,13 @@
-import {ComponentMeta, ComponentStory} from '@storybook/react'
+import {Meta, StoryFn} from '@storybook/react'
 import React from 'react'
 import {Counter} from './Counter'
 
 export default {
     component: Counter,
     title: 'Counter',
-} as ComponentMeta<typeof Counter>
+} as Meta<typeof Counter>
 
-const Template: ComponentStory<typeof Counter> = args => <Counter {...args} />
+const Template: StoryFn<typeof Counter> = args => <Counter {...args} />
 
 export const Input = Template.bind({})
 Input.args = {

@@ -1,5 +1,5 @@
 {
-  "author": "sms77 e.K. <support@sms77.io> (https://www.sms77.io/)",
+  "author": "seven communications GmbH & Co. KG <support@seven.io> (https://www.seven.io/)",
   "homepage": "https://github.com/seven-io/react-sms-counter",
   "keywords": [
     "sms",
@@ -13,15 +13,16 @@
     "@sms77.io/counter": "^1.5.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
+    "@storybook/addon-actions": "^7.2.1",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/react-vite": "^7.2.1",
+    "@types/react": "^18.2.19",
+    "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/react": "^6.5.12",
-    "vite": "^3.1.8"
+    "storybook": "^7.2.1",
+    "vite": "^4.4.9"
   },
   "exports": {
     ".": {
@@ -49,9 +50,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build",
-    "storybook": "start-storybook -p 6006 --no-open"
+    "storybook": "storybook dev"
   },
   "type": "module",
   "types": "dist/index.d.ts",
