@@ -5,7 +5,7 @@ SMS Counter for React applications.
 ## Usage
 
 ```typescript jsx
-import {Counter} from 'react-sms-counter'
+import {Counter} from '@seven.io/react-sms-counter'
 
 export default () => {
     return <Counter Input={props => <input {...props}/>}/>
