@@ -6,7 +6,7 @@ import {
     useEffect,
     useState
 } from 'react'
-import {CounterStats, getCounterStats} from '@sms77.io/counter'
+import {CounterStats, getCounterStats} from '@seven.io/counter'
 
 export const Counter: FC<{
     Input: ComponentType<TextareaHTMLAttributes<any> | InputHTMLAttributes<any>>

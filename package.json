@@ -9,9 +9,6 @@
     "ucs2"
   ],
   "description": "Counts the SMS character usage in browser as well as NodeJS environments.",
-  "dependencies": {
-    "@sms77.io/counter": "^1.5.0"
-  },
   "devDependencies": {
     "@storybook/addon-links": "^10.3.5",
     "@storybook/react-vite": "^10.3.5",
@@ -54,5 +51,8 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "dependencies": {
+    "@seven.io/counter": "^1.11.1"
+  }
 }
